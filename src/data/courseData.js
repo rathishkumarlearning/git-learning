@@ -463,6 +463,13 @@ git log -S "function_name"
 git log --since="2024-01-01" --until="2024-02-01"
 \`\`\`
 
+### Practice Exercises
+
+1. **Explore commit history**: Create a repo with 5 commits. Use \`git log --oneline\`, \`git show HEAD\`, and \`git show HEAD~2\` to navigate history.
+2. **Use git blame**: Create a file with multiple lines, commit them over several commits. Run \`git blame\` to see which commit added each line.
+3. **Search commits**: Use \`git log --grep\` to find commits by message, \`git log --author\` to filter by author, and \`git log -S\` to find commits that changed specific code.
+4. **Amend a commit**: Make a commit with a typo in the message. Use \`git commit --amend\` to fix it.
+
 You now understand what commits really are! 📚
           `
         },
@@ -646,6 +653,13 @@ git revert abc123
 git reflog                 # find the commit
 git reset --hard abc123    # go back to it
 \`\`\`
+
+### Practice Exercises
+
+1. **Practice reset modes**: Make 3 commits. Try \`git reset --soft HEAD~1\`, check status. Try \`--mixed\` and \`--hard\` (on test commits you don't need).
+2. **Use reflog**: Reset hard to HEAD~3, then use \`git reflog\` to find and recover the "lost" commits.
+3. **Stash workflow**: Make changes, stash them, switch branches, do work, switch back, and pop your stash.
+4. **Revert practice**: Push a commit to a remote, then use \`git revert\` (not reset) to undo it safely.
 
 You now have the power to fix almost any mistake! 💪
           `
@@ -1206,6 +1220,13 @@ You can do a lot without command line:
 - Review pull requests
 - Manage settings
 
+### Practice Exercises
+
+1. **Create a GitHub repo**: Create a new repository on GitHub and push a local project to it.
+2. **Set up SSH keys**: Generate an SSH key, add it to GitHub, and test the connection with \`ssh -T git@github.com\`.
+3. **Clone and contribute**: Clone any public repository, explore the code, and practice \`git fetch\` vs \`git pull\`.
+4. **Create a .gitignore**: Create a .gitignore file for a Node.js project (node_modules, .env, etc.) and verify the files are excluded.
+
 Your code is now in the cloud! 🌤️
           `
         },
@@ -1389,6 +1410,13 @@ git push origin main
 <warning>
 ⚠️ Always create PRs from feature branches, never from main!
 </warning>
+
+### Practice Exercises
+
+1. **Create your first PR**: Push a feature branch to GitHub and create a Pull Request with a proper title and description.
+2. **Review practice**: Fork a classmate's or friend's repo, find something to improve, and submit a PR.
+3. **Handle conflicts in a PR**: Create two branches that modify the same file, merge one into main, then try to merge the other via PR. Resolve the conflict.
+4. **Draft PR workflow**: Create a draft PR, push work-in-progress commits, then mark it as "Ready for review".
 
 You now understand collaborative Git workflows! 🤝
           `
