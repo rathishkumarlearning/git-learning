@@ -611,7 +611,18 @@ table {
   max-width: 100%;
 }
 
-img, video, iframe {
+img, video, iframe, canvas, svg:not(:root) {
   max-width: 100%;
   height: auto;
+}
+
+.lesson-content, .lesson-text, .content, .main-content, .lesson-container, .tip-box, .warning-box, .checkpoint, .quiz-container, .quiz-question, p, li, td, th, h1, h2, h3, h4 { overflow-wrap: break-word; word-wrap: break-word; hyphens: auto; }
+.code-editor, .code-block { overflow: hidden; max-width: 100%; }
+.code-editor pre, .code-block pre, .code-content pre { overflow-x: auto; }
+
+@media (max-width: 480px) {
+  .main-content { padding: 3.5rem 0.75rem 1.5rem !important; }
+  .hero-title { font-size: 1.5rem !important; }
+  .lesson-title { font-size: 1.35rem !important; }
+  pre code, .code-content pre { font-size: 11px !important; }
 }
